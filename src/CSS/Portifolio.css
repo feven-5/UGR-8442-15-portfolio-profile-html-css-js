@@ -73,7 +73,9 @@ footer a {
   margin: auto;
   text-align: right;
 }
-
+.codedBy p{
+  color: #ffffff
+}
 .links {
   display: none;
 }

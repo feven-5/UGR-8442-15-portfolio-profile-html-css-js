@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #9198A1;
+}
+header{
+  background: #131F3C;
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  align-items: center;
+}
+.navigation{
+  display: inline-block;
+}
+.navigation a{
+  color: white;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+.logo h1{
+  font-family: 'Lucida Handwriting', Verdana, sans-serif;
+  color: white;
+  font-size: 24px;
+}
+section{
+  background: #000;
+  padding: 20px 0;
+}
+.CVScreanshot{
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding-top: 70px;
+}
+footer{
+  background: #293241;
+  padding: 20px 0 10px;
+}
+footer a{
+  text-decoration: none;
+}
+.contact{
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+.gamil, .linkedin, .whatsapp{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+
+.contact img{
+  width: 20px;
+  padding-right: 20px;
+}
+.codedBy{
+  width: 80%;
+  display: block;
+  margin:auto;
+  text-align: right;
+}
+.codedBy p{
+  font-size: 14px;
+}
+.links{
+  display: none;
+}
+
+/* menue */
+.unorderedList{
+  display: block;
+}
+.select a{
+  align-content: right;
+}
+.menu{
+  width: 30%;
+  padding: 0 8px;
+  background: #9198A1;
+  border: #9198A1 solid 1px;
+  border-radius: 3px;
+  float: right;
+}
+
+.unorderedList li{
+  list-style: none;
+  
+}
+.unorderedList a{
+  text-decoration: none;
+}
+span {
+  font-size: 12px;
+}
+.unorderedList{
+  display: none;
+}
+
+@media (max-width:480px) {/*mobile portrait*/
+  .contact img {
+    position: relative;
+    top: 5px;
+  }
+
+  .whatsapp {
+    position: relative;
+    left: -40px;
+  }
+
+  .linkedin {
+    position: relative;
+    left: -42px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width:481px) and (max-width:1024px) {
+
+  /*mobile landscape*/
+  
+
+  span {
+    display: none;
+  }
+  p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 15px;
+  }
+
+  .codedBy {
+    text-align: center;
+  }
+  p {
+    line-height: 27px;
+  }
+
+  .logo h1 {
+    font-size: 26px;
+  }
+}
+@media(min-width:1025px) {/*tablet landscape and desktop*/
+  .links {
+    display: block;
+  }
+
+  .select {
+    display: none;
+  }
+
+  .contact {
+    justify-content: end;
+  }
+
+  .codedBy {
+    text-align: left;
+  }
+  p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contact {
+    position: relative;
+    bottom: -32px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .proEducation,
+  .skillCertefication {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .proEducation {
+    background: #151b23;
+    padding: 10px;
+    margin: 20px 0;
+  }
+    span {
+      display: none;
+    }
+  
+    .contact {
+      display: flex;
+      padding: 0 0 0 15px;
+    }
+  
+    .codedBy {
+      text-align: left;
+    }
+    .head, .CVScreanshot, .contact, .codedBy{
+      width: 60%;
+    }
+}

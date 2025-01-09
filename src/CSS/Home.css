@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #9198A1;
+}
+
+header {
+  background: #131F3C;
+  width: 100%;
+  padding: 15px 0;
+  position: fixed;
+}
+
+.head {
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+  margin: auto;
+  
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+
+.logo h1 {
+  font-family: 'Lucida Handwriting', Verdana, sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+main {
+  background: #000;
+  padding-top: 100px;
+}
+p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+.aboutMe {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.aboutMe h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.picture {
+  width: 40%;
+  margin: auto;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 220px;
+}
+
+.about {
+  padding-top: 30px;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.paragraph {
+  background: #151B23;
+  padding: 15px;
+  border-radius: 8px;
+  border: solid 1px #293241;
+}
+
+.paragraph p {
+  padding: 10px;
+}
+
+.myFeelings {
+  padding: 30px 0 0 0;
+}
+
+.video {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding-bottom: 30px;
+}
+
+video {
+  padding: 0 12.5%;
+}
+
+.secondParagraph {
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  width: 75%;
+  background: #151B23;
+  padding: 20px 10px 20px 30px;
+  border: solid 1px #293241;
+  border-radius: 8px;
+}
+footer {
+  background: #293241;
+  padding: 20px 0 10px;
+}
+footer a {
+  text-decoration: none;
+}
+.contact {
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+
+.gamil,
+.linkedin,
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.contact img {
+  width: 20px;
+  padding-right: 20px;
+}
+
+.codedBy {
+  width: 80%;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+.codedBy p{
+  font-size: 14px;
+}
+
+.links {
+  display: none;
+  margin: 0;
+}
+.passion{
+  padding: 10px 0 30px;
+  
+}
+.first , .second{
+  padding: 20px 0 0;
+}
+/* menue */
+.unorderedList {
+  display: block;
+}
+
+.select a {
+  align-content: right;
+}
+
+.menu {
+  width: 30%;
+  padding: 0 8px;
+  background: #9198A1;
+  border: #9198A1 solid 1px;
+  border-radius: 3px;
+  float: right;
+}
+
+.unorderedList li {
+  list-style: none;
+
+}
+span{
+  font-size: 12px;
+}
+.unorderedList a {
+  text-decoration: none;
+}
+.unorderedList{
+  display:none;
+}
+@media (max-width:480px){ /*mobile portrait*/
+  .contact img {
+    position: relative;
+    top: 5px;
+  }
+  .whatsapp {
+    position: relative;
+    left: -55px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .linkedin {
+    position: relative;
+    left: -59px;
+    font-size: 14px;
+  }
+  .codedBy{
+    text-align: left;
+  }
+  .passion{
+    display: none;
+  }
+}
+@media only screen and (min-width:481px) and (max-width:768px){/*mobile landscape*/
+  .aboutMe{
+    display: flex;
+  }
+  span{
+    display: none;
+  }
+  .contact{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 15px;
+  }
+  .codedBy{
+    text-align: center;
+  }
+  .second{
+    display: none;
+  }
+  p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .logo h1{
+    font-size: 26px;
+  }
+}
+@media /*tablet and desktop*/(min-width:769px) {
+  .aboutMe {
+    display: flex;
+  }
+
+  span {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 15px;
+  }
+
+  .codedBy {
+    text-align: center;
+  }
+
+}
+@media(min-width:769px) and (max-width:1024px) {/*tablet portrait*/
+  .second {
+    display: none;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .logo{
+    font-size: 28px;
+  }
+}
+@media(min-width:1025px){ /*tablet landscape and desktop*/
+  .links {
+    display: block;
+  }
+
+  .select {
+    display: none;
+  }
+
+  .contact {
+    justify-content: end;
+  }
+
+  .codedBy {
+    text-align: left;
+  }
+  .contact {
+    position: relative;
+    bottom: -32px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+  .main, .codedBy, .contact, .head{
+    width: 60%;
+  }
+}
+@media(min-width:1281px){/*desktop*/
+  .myFeelings{
+    display: flex;
+  }
+  .secondParagraph{
+    height: 10;
+    margin: 0;
+    line-height: 150%;
+  }
+  .logo {
+    font-size: 36px;
+  }
+}

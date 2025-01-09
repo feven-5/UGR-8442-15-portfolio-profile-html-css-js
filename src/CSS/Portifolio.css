@@ -74,7 +74,8 @@ footer a {
   text-align: right;
 }
 .codedBy p{
-  color: #ffffff
+  font-size: 14px;
+  color: #ffffff;
 }
 .links {
   display: none;

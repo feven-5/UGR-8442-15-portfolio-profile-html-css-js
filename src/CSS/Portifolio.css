@@ -149,7 +149,7 @@ h5 {
 table,
 td,
 th {
-  border: solid 1px #9198A1;
+  border: solid 1px #9198a1;
 }
 
 .Skill h2 {
@@ -168,7 +168,7 @@ td,
 th {
   height: 35px;
   text-align: left;
-  color: black;
+  color: #9198a1;
   padding: 0 20px;
 }
 

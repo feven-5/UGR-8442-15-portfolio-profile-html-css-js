@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #9198A1;
+}
+
+header {
+  background: #131F3C;
+  width: 100%;
+  padding: 15px 0;
+  position: fixed;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+
+.logo h1 {
+  font-family: 'Lucida Handwriting', Verdana, sans-serif;
+  color: white;
+}
+
+.links {
+  display: none;
+}
+
+/* menue */
+.unorderedList {
+  display: block;
+}
+
+.select a {
+  align-content: right;
+}
+
+.menu {
+  width: 30%;
+  padding: 0 8px;
+  background: #9198A1;
+  border: #9198A1 solid 1px;
+  border-radius: 3px;
+  float: right;
+}
+
+.unorderedList li {
+  list-style: none;
+}
+
+.unorderedList a {
+  text-decoration: none;
+}
+
+footer {
+  background: #293241;
+  padding: 20px 0 10px;
+}
+
+.codedBy {
+  width: 80%;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+.codedBy p{
+  font-size: 14px;
+  color: #ffffff;
+}
+
+section {
+  background: #000;
+}
+
+.container {
+  width: 80%;
+  padding: 70px 0;
+  margin: auto;
+}
+
+.choose {
+  padding: 30px 0;
+
+}
+
+.choose a {
+  text-decoration: none;
+  color: white;
+  padding-right: 30px;
+}
+
+h2 {
+  margin: 20px;
+  color: white;
+}
+
+.playingPiano {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding-bottom: 30px;
+}
+
+.p {
+  width: 60%;
+  background: #151b23;
+  padding: 20px;
+  margin: 10px 0 40px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+footer a{text-decoration: none;}
+.contact {
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+
+.gamil,
+.linkedin,
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.contact img {
+  width: 20px;
+  padding-right: 20px;
+}
+span {
+  display: none;
+}
+
+@media (max-width:480px) {
+ /*moblie portrait*/
+  .contact{
+    display: none;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .unorderedList {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+  /*mobile landscape*/
+  .contact {
+    display: none;
+  }
+  .playingPiano{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .unorderedList {
+    display: none;
+  }
+
+}
+
+@media/*tablet and desktop*/
+(min-width:769px) {
+  .codedBy {
+    text-align: left;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact {
+    position: relative;
+    bottom: -32px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .contact {
+    display: flex;
+    padding: 0 0 0 15px;
+  }
+  .contact {
+    justify-content: end;
+  }
+  
+}
+
+@media(min-width:769px) and (max-width:1024px) {/*tablet portrait*/
+  .playingPiano {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .unorderedList {
+    display: none;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media(min-width:1025px) {/*tablet landscape and desktop*/
+  .links {
+    display: block;
+  }
+  .select {
+    display: none;
+  }
+  .playingPiano {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+}
